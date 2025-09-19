@@ -35,11 +35,11 @@
    $ rustup target add riscv64gc-unknown-none-elf
 
 
-然后在 ``os`` 目录下新建 ``.cargo`` 目录，并在这个目录下创建 ``config`` 文件，并在里面输入如下内容：
+然后在 ``os`` 目录下新建 ``.cargo`` 目录，并在这个目录下创建 ``config.toml``（cargo version <= cargo 1.38 使用config） 文件，并在里面输入如下内容：
 
 .. code-block:: toml
 
-   # os/.cargo/config
+   # os/.cargo/config.toml
    [build]
    target = "riscv64gc-unknown-none-elf"
 
